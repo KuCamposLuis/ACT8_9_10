@@ -1,0 +1,82 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center; 
+}
+
+
+.Btn{
+
+    display: block; 
+    margin: 15px auto;
+    
+}
+.box{
+    border-radius: 10px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.formulario {
+    margin-top: 20px;
+    text-align: left; 
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#input-container {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 50px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#matrix-container {
+    margin-top: 20px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}

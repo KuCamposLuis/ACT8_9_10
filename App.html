@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PRACTICA 3</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>PRACTICAS</h1>
+
+        <div class="container mt-5">
+            <h3 class="mt-3"><span class="badge bg-secondary">Selecciona la opcion:</span></h3>
+            <div class="form-group">
+                <select class="form-control" id="practica" onchange="cambiarFormulario()">
+                    <option value="act8">ACTIVIDAD 8</option>
+                    <option value="act9">ACTIVIDAD 9</option>
+                    <option value="act10">ACTIVIDAD 10</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="act8" style="display: none;">
+            <h1>Cuadro Mágico</h1>
+        <div id="input-container">
+            <label for="size">Tamaño del Cuadro:</label>
+            <input type="number" id="size" min="2">
+            <button class="btn btn-primary btn-lg" onclick="createMagicSquare()">Crear Cuadro Mágico</button>
+        </div>
+        <div id="matrix-container"></div>
+        <div id="result"></div>
+        </div>
+
+        <div id="act9" style="display: none;">
+            <h2>OPERACIONES CON DOS ARREGLOS</h2>
+            <h1>Matriz 1</h1>
+            <table id="matriz1">
+                <tr>
+                    <td><input type="number" id="m11"></td>
+                    <td><input type="number" id="m12"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="m21"></td>
+                    <td><input type="number" id="m22"></td>
+                </tr>
+            </table>
+
+            <h1>Matriz 2</h1>
+            <table id="matriz2">
+                <tr>
+                    <td><input type="number" id="n11"></td>
+                    <td><input type="number" id="n12"></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="n21"></td>
+                    <td><input type="number" id="n22"></td>
+                </tr>
+            </table>
+            <pre id="resultadoMCD"></pre>
+            <button class="btn btn-primary btn-lg" onclick="realizarOperaciones()">Realizar Operaciones</button>
+
+            <h2>Resultados:</h2>
+            <div id="resultados"></div>
+        </div>
+
+        <div id="act10" style="display: none;">
+            <h1>EJERCICIO GAUSS</h1>
+            <div class="container">
+                <label for="tamañoMatriz">Tamaño del Cuadro:</label>
+                <input type="number" id="tamañoMatriz" min="1">
+                <button id="generarMatriz">Calcular Matriz</button>
+        
+                <div id="matrizInput" style="display:none;">
+                    <h4>Ingrese los valores:</h4>
+                    <table>
+                        <tbody id="matrizValores">
+                        </tbody>
+                    </table>
+                    <button id="resolverGauss">Resolver Gauss</button>
+                </div>
+        
+                <h2>Matriz Resultado:</h2>
+                <pre id="matrizResultado"></pre>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
